@@ -25,6 +25,17 @@ const connect = function () {
     conn.write('Name: MFC');
   });
 
+//    // If the server is sent a "Move: up" command, it will move our snake up one block 
+//    conn.on('connect', () => {
+//     conn.write("Move: up");
+// //when using setTimeout, we must wit for each action to happen    
+//     setTimeout(() => {conn.write("Move: up")}, 50);
+// // if we use setInterval without using clearInterval, it goes on and on infinitely
+//     setInterval(() => { conn.write("Move: up")}, 50)
+//     setInterval(() => { conn.write("Move: up")}, 50)
+//     setInterval(() => { conn.write("Move: left")}, 50)
+//   });
+
   // interpret incoming data as text
   conn.setEncoding("utf8");
 
