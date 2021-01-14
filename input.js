@@ -1,6 +1,5 @@
 // Stores the active TCP connection object.
 let connection;
-
 /**
  * Setup User Interface 
  * Specifically, so that we can handle user input via stdin
@@ -40,8 +39,6 @@ const setupInput = function(conn) {
       console.log("Message!")
     }
   })
-
-
 return stdin;
 }
 

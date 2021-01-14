@@ -1,18 +1,12 @@
 const net = require("net");
+const { IP, PORT } = require('./constants');
 /**
  * Establishes connection with the game server
  */
 const connect = function () {
-  // LHL server
-  // const conn = net.createConnection({
-  //   host: "135.23.222.131",
-  //   port: 50542,
-  // });
-  
-  // // // Local server
   const conn = net.createConnection({
-    host: "localhost",
-    port: 50541,
+    host: IP,
+    port: PORT
   });
 
   //Print a message to the screen when the connection is successfully established
